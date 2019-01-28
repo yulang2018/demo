@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yulang.project.mapper.GodMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yulang.project.entity.God">
+        <id column="pkid" property="pkid" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="name" property="name" />
+        <result column="phone" property="phone" />
+        <result column="weiXinNo" property="weiXinNo" />
+        <result column="qqNo" property="qqNo" />
+        <result column="sex" property="sex" />
+        <result column="age" property="age" />
+        <result column="level" property="level" />
+        <result column="comeChannel" property="comeChannel" />
+        <result column="address" property="address" />
+        <result column="salt" property="salt" />
+        <result column="loginKey" property="loginKey" />
+        <result column="nickName" property="nickName" />
+        <result column="wxOpenId" property="wxOpenId" />
+        <result column="headImgUrl" property="headImgUrl" />
+        <result column="isBindWx" property="isBindWx" />
+        <result column="favAddr" property="favAddr" />
+        <result column="godNo" property="godNo" />
+        <result column="isValid" property="isValid" />
+        <result column="isBindOldGOd" property="isBindOldGOd" />
+        <result column="words" property="words" />
+        <result column="orderPhone" property="orderPhone" />
+        <result column="oldAmount" property="oldAmount" />
+        <result column="isOld" property="isOld" />
+        <result column="createChannel" property="createChannel" />
+        <result column="godType" property="godType" />
+        <result column="newTime" property="newTime" />
+        <result column="employeeId" property="employeeId" />
+        <result column="comeFrom" property="comeFrom" />
+        <result column="isMarkComeFrom" property="isMarkComeFrom" />
+        <result column="newTime2" property="newTime2" />
+        <result column="newTime3" property="newTime3" />
+        <result column="godTypeFlag" property="godTypeFlag" />
+        <result column="lastLoginTime" property="lastLoginTime" />
+        <result column="inviteType" property="inviteType" />
+        <result column="nmCoin" property="nmCoin" />
+        <result column="nmScore" property="nmScore" />
+        <result column="mktStoreId" property="mktStoreId" />
+        <result column="mktCommunity" property="mktCommunity" />
+        <result column="isSubscribe" property="isSubscribe" />
+        <result column="isFreeOrder" property="isFreeOrder" />
+        <result column="userNo" property="userNo" />
+        <result column="isCommunity" property="isCommunity" />
+        <result column="birthday" property="birthday" />
+        <result column="passWord" property="passWord" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        pkid, createTime, updateTime, name, phone, weiXinNo, qqNo, sex, age, level, comeChannel, address, salt, loginKey, nickName, wxOpenId, headImgUrl, isBindWx, favAddr, godNo, isValid, isBindOldGOd, words, orderPhone, oldAmount, isOld, createChannel, godType, newTime, employeeId, comeFrom, isMarkComeFrom, newTime2, newTime3, godTypeFlag, lastLoginTime, inviteType, nmCoin, nmScore, mktStoreId, mktCommunity, isSubscribe, isFreeOrder, userNo, isCommunity, birthday, passWord
+    </sql>
+
+    <select id="selectId" resultType="God" >
+        select * from  god
+    </select>
+
+</mapper>
